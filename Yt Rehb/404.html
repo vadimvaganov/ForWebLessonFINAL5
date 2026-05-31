@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена — Без дыма</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            color: #c0392b;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .error-message {
+            font-size: 28px;
+            color: #1a2a3a;
+            margin: 20px 0;
+        }
+        
+        .lung-icon {
+            font-size: 80px;
+            margin: 30px 0;
+            animation: float 3s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .error-text {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Без дыма | Вред курения</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="facts.html">Факты</a></li>
+                        <li><a href="consequences.html">Последствия</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Опрос</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="error-page">
+            <div class="lung-icon">🚭</div>
+            <h1 class="error-code">404</h1>
+            <p class="error-message">Страница не найдена</p>
+            <p class="error-text">Похоже, вы потерялись на нашем сайте. Запрашиваемая страница не существует или была перемещена.</p>
+            <a href="index.html" class="btn">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 6202 | Без дыма — информация о вреде курения</p>
+            <p>Сайт создан по приколу, по рофлу!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
